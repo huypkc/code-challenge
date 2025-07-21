@@ -1,0 +1,1 @@
+export const TOKENS_API_URL = "https://interview.switcheo.com/prices.json";

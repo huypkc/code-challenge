@@ -1,0 +1,55 @@
+@import "tailwindcss";
+
+* {
+  outline: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+@keyframes errorAnimation {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+
+  50% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  65% {
+    transform: scale(1.05);
+  }
+
+  80% {
+    transform: scale(1);
+  }
+
+  95% {
+    transform: scale(1.05);
+  }
+
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.animate-errorAnimation {
+  animation: errorAnimation 0.8s ease-in-out forwards;
+}
+
+.app-scroll {
+  scroll-behavior: smooth;
+}
+
+.app-scroll::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Handle */
+.app-scroll::-webkit-scrollbar-thumb {
+  background: #7A6EAA;
+}
